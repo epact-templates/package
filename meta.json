@@ -1,0 +1,22 @@
+{
+  "prompts": {
+    "mode": {
+      "type": "multiselect",
+      "message": "Select mode for package:",
+      "choices": [
+        {
+          "name": "Browser",
+          "value": "browser"
+        },
+        {
+          "name": "Node.js",
+          "value": "node"
+        },
+        {
+          "name": "Both",
+          "value": "both"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+# {{ pkgName }}
+
+{{ description }}
+
+[https://{{ gitUser.name }}.github.io/{{ pkgName }}](https://{{ gitUser.name }}.github.io/{{ pkgName }})
+
+[![Build](https://github.com/{{ gitUser.name }}/{{ pkgName }}/actions/workflows/build-docs.yml/badge.svg)](https://github.com/{{ gitUser.name }}/{{ pkgName }}/actions/workflows/docs.yml)
+[![NPM](https://badge.fury.io/js/{{ pkgName }}.svg)](http://badge.fury.io/js/{{ pkgName }})
+[![Size](https://img.shields.io/bundlephobia/minzip/{{ pkgName }}/latest)](https://npmjs.org/package/{{ pkgName }})
+[![Languages](https://img.shields.io/github/languages/top/{{ gitUser.name }}/{{ pkgName }})](https://npmjs.org/package/{{ pkgName }})
+[![License](https://img.shields.io/npm/l/{{ pkgName }})](https://npmjs.org/package/{{ pkgName }})
+[![Star](https://img.shields.io/github/stars/{{ gitUser.name }}/{{ pkgName }})](https://github.com/{{ gitUser.name }}/{{ pkgName }}/stargazers)
+[![Download](https://img.shields.io/npm/dm/{{ pkgName }})](https://npmjs.org/package/{{ pkgName }})
+
+## Installation
+
+NPM / Yarn / Pnpm
+```bash
+pnpm add {{ pkgName }}
+```
+
+{{#if_ne mode "node"}}
+CDN:
+``` html
+<script src="https://unpkg.com/{{ pkgName }}"></script>
+```
+{{/if_ne}}
