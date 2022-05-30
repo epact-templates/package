@@ -5,6 +5,6 @@ export default defineConfig({
   clean: true,
   splitting: true,
   dts: true,
-  format: ["cjs", "esm"{{#if_ne mode "node"}}, "iife"}],
+  format: ["cjs", "esm"{{#if_ne mode "node"}}, "iife"{{/if_ne}}],
   target: {{#if_eq mode "node"}}"node16"{{/if_eq}}{{#if_ne mode "node"}}"es2015"{{/if_ne}}
 })
